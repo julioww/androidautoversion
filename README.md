@@ -12,6 +12,7 @@ Issue one of these gradle commands:
 - `./gradlew bumpPatch`
 - `./gradlew bumpMinor`
 - `./gradlew bumpMajor`
+- `./gradlew bumpNumber`
 
 and your app will be updated accordingly.
 
