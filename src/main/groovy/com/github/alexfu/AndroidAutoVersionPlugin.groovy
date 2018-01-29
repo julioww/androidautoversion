@@ -44,6 +44,11 @@ class AndroidAutoVersionPlugin implements Plugin<Project> {
             version.update(VersionType.MAJOR)
             applyVersion(project)
         }
+        
+        project.task("bumpNumber").doLast {
+            version.update(VersionType.Number)
+            applyVersion(project)
+        }
     }
 
     private void setUp(Project project) {
