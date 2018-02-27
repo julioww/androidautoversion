@@ -45,8 +45,8 @@ class AndroidAutoVersionPlugin implements Plugin<Project> {
             applyVersion(project)
         }
         
-        project.task("bumpNumber").doLast {
-            version.update(VersionType.NUMBER)
+        project.task("bumpCode").doLast {
+            version.update(VersionType.CODE)
             applyVersion(project)
         }
     }
